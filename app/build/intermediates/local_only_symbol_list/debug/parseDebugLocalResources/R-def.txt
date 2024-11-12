@@ -27,6 +27,7 @@ drawable sql
 font poppins_regular
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw correct_sound
 string app_name
 style Theme.QuizApp
 xml backup_rules
