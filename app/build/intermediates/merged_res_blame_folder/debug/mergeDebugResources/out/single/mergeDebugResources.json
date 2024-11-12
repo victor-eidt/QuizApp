@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_python.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/python.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_ic_leaderboard.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\ic_leaderboard.png"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_bancodedados.jpg.flat",
+        "source": "com.example.quizapp-main-54:/drawable/bancodedados.jpg"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_http.jpeg.flat",
+        "source": "com.example.quizapp-main-54:/drawable/http.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_background_image.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\background_image.png"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_recursiva.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/recursiva.png"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_sql.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/sql.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_background_ic.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\background_ic.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_sample_image1.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\sample_image1.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_ic_play.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\ic_play.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_ic_header_image.png.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\ic_header_image.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_commit.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/commit.png"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_lifo.jpg.flat",
+        "source": "com.example.quizapp-main-54:/drawable/lifo.jpg"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_html.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/html.png"
+    },
+    {
+        "merged": "com.example.quizapp-debug-52:/drawable_css.png.flat",
+        "source": "com.example.quizapp-main-54:/drawable/css.png"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-debug-52:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\victo\\.gradle\\daemon\\8.7\\com.example.quizapp-main-54:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]
