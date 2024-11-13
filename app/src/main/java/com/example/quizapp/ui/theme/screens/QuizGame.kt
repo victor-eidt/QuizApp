@@ -3,7 +3,7 @@ package com.example.quizapp.ui.theme.screens
 import androidx.compose.runtime.*
 import com.example.quizapp.data.Question
 import com.example.quizapp.data.Score
-import com.example.quizapp.ui.theme.screens.QuestionView
+import com.example.quizapp.data.LeaderboardRepository
 
 @Composable
 fun QuizGame(questions: List<Question>, onQuizEnd: (score: Int) -> Unit) {
@@ -24,12 +24,17 @@ fun QuizGame(questions: List<Question>, onQuizEnd: (score: Int) -> Unit) {
                     currentQuestionIndex++
                     questionStartTime = System.currentTimeMillis()
                 } else {
-                    onQuizEnd(score.totalScore)
+                    saveScoreAndEndQuiz(score.totalScore, onQuizEnd)
                 }
             },
-            onQuizEnd = { onQuizEnd(score.totalScore) }
+            onQuizEnd = { saveScoreAndEndQuiz(score.totalScore, onQuizEnd) }
         )
     } else {
-        onQuizEnd(score.totalScore)
+        saveScoreAndEndQuiz(score.totalScore, onQuizEnd)
     }
+}
+
+private fun saveScoreAndEndQuiz(score: Int, onQuizEnd: (score: Int) -> Unit) {
+    LeaderboardRepository.addScore("Player", score)
+    onQuizEnd(score)
 }

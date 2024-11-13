@@ -136,7 +136,7 @@ fun QuestionView(
             }
         }
     }
-    
+
     LaunchedEffect(selectedOptionIndex) {
         if (selectedOptionIndex != null) {
             delay(1000)
