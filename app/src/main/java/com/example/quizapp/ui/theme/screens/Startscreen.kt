@@ -22,10 +22,12 @@ import androidx.compose.ui.unit.sp
 import com.example.quizapp.R
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.style.TextAlign
+import androidx.navigation.compose.rememberNavController
 import com.example.quizapp.ui.theme.poppins
 
 @Composable
 fun StartScreen(onStartQuiz: () -> Unit = {}, onViewLeaderboard: () -> Unit = {}) {
+    val navController = rememberNavController()
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -85,15 +87,14 @@ fun StartScreen(onStartQuiz: () -> Unit = {}, onViewLeaderboard: () -> Unit = {}
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = onViewLeaderboard,
+                onClick = { onViewLeaderboard() },
                 shape = RoundedCornerShape(50),
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 32.dp)
                     .height(50.dp),
                 colors = ButtonDefaults.buttonColors(
-                    Color.White
-                )
+                    Color.White)
             ) {
                 Text(
                     text = "Leaderboard",

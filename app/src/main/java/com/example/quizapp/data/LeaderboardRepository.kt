@@ -4,7 +4,7 @@ object LeaderboardRepository {
     private val leaderboard = mutableListOf<LeaderboardEntry>()
 
     fun addScore(playerName: String, score: Int) {
-        leaderboard.add(LeaderboardEntry(playerName, score))
+        leaderboard.add(LeaderboardEntry(playerName = playerName, score = score))
         leaderboard.sortByDescending { it.score }
         if (leaderboard.size > 10) {
             leaderboard.removeLast()
@@ -13,3 +13,4 @@ object LeaderboardRepository {
 
     fun getLeaderboard(): List<LeaderboardEntry> = leaderboard
 }
+

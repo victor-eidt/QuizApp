@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.quizapp-mergeDebugResources-50:/values-v21/values-v21.xml",
+            "outputFile": "com.example.quizapp-mergeDebugResources-54:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\victo\\.gradle\\caches\\transforms-4\\df329d38d572adf1e32bc36161ad91b8\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\victo\\.gradle\\caches\\transforms-4\\376db3a8882170fcf6e7f6068ceec7a3\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
