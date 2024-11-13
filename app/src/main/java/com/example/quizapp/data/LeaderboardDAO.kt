@@ -12,5 +12,9 @@ interface LeaderboardDao {
     suspend fun insert(entry: LeaderboardEntry)
 
     @Query("SELECT * FROM leaderboard_table ORDER BY score DESC LIMIT 10")
-    fun getTopScores(): Flow<List<LeaderboardEntry>>
+    fun getTopScores(): kotlinx.coroutines.flow.Flow<List<LeaderboardEntry>>
+
+    @Query("SELECT COUNT(*) FROM leaderboard_table WHERE playerName = :playerName AND score = :score")
+    suspend fun countEntries(playerName: String, score: Int): Int
 }
+

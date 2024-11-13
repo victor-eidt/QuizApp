@@ -35,13 +35,14 @@ fun QuestionView(
 ) {
     val context = LocalContext.current
     var selectedOptionIndex by remember { mutableStateOf<Int?>(null) }
-    var buttonColors by remember { mutableStateOf(List(question.options.size) { Color.White }) }
+    var buttonColors by remember { mutableStateOf(List(question.answers.size) { Color.White }) }
     var isCorrectAnswer by remember { mutableStateOf(false) }
     var showNextQuestion by remember { mutableStateOf(false) }
+    var shuffledAnswers by remember { mutableStateOf(question.answers.shuffled()) }
 
     if (showNextQuestion) {
         selectedOptionIndex = null
-        buttonColors = List(question.options.size) { Color.White }
+        buttonColors = List(question.answers.size) { Color.White }
         showNextQuestion = false
     }
 
@@ -88,12 +89,12 @@ fun QuestionView(
                     )
                 }
 
-                currentQuestion.options.forEachIndexed { index, option ->
+                shuffledAnswers.forEachIndexed { index, answer ->
                     Button(
                         onClick = {
                             if (selectedOptionIndex == null) {
                                 selectedOptionIndex = index
-                                isCorrectAnswer = index == currentQuestion.correctAnswerIndex
+                                isCorrectAnswer = answer.isCorrect
                                 buttonColors = buttonColors.toMutableList().apply {
                                     this[index] = if (isCorrectAnswer) Color.Green else Color.Red
                                 }
@@ -110,11 +111,11 @@ fun QuestionView(
                             .padding(vertical = 8.dp),
                         shape = RoundedCornerShape(50),
                         colors = ButtonDefaults.buttonColors(
-                            buttonColors[index]
+                            containerColor = buttonColors[index]
                         )
                     ) {
                         Text(
-                            text = option,
+                            text = answer.text,
                             color = Color.Black,
                             fontSize = 18.sp,
                             fontFamily = poppins

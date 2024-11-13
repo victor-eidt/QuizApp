@@ -30,6 +30,7 @@ fun MyApp() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = "start") {
+        // Tela inicial
         composable("start") {
             StartScreen(
                 onStartQuiz = { navController.navigate("quiz") },
@@ -37,6 +38,20 @@ fun MyApp() {
             )
         }
 
+        // Tela do quiz
+        composable("quiz") {
+            QuizGame(
+                context = LocalContext.current,
+                questions = QuestionRepository.questions,
+                onQuizEnd = { score ->
+                    navController.navigate("final/$score") {
+                        popUpTo("quiz") { inclusive = true }
+                    }
+                }
+            )
+        }
+
+        // Tela final com pontuação
         composable(
             route = "final/{score}",
             arguments = listOf(navArgument("score") { type = NavType.IntType })
@@ -50,6 +65,11 @@ fun MyApp() {
                     }
                 }
             )
+        }
+
+        // Tela do leaderboard
+        composable("leaderboard") {
+            LeaderboardScreen(context = LocalContext.current)
         }
     }
 }

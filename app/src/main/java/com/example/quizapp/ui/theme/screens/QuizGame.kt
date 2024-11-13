@@ -22,8 +22,14 @@ fun QuizGame(
     val leaderboardDao = QuizDatabase.getDatabase(context).leaderboardDao()
     var shuffledQuestions by remember { mutableStateOf(questions.shuffled()) }
     var questionStartTime by remember { mutableLongStateOf(System.currentTimeMillis()) }
+    var isQuizFinished by remember { mutableStateOf(false) }
 
-    if (currentQuestionIndex < shuffledQuestions.size) {
+    if (isQuizFinished) {
+        // Garante que a tela final seja exibida apenas uma vez
+        LaunchedEffect(Unit) {
+            saveScoreAndEndQuiz(score.totalScore, leaderboardDao, onQuizEnd)
+        }
+    } else if (currentQuestionIndex < shuffledQuestions.size) {
         QuestionView(
             question = shuffledQuestions[currentQuestionIndex],
             score = score,
@@ -33,17 +39,21 @@ fun QuizGame(
                     val points = score.calculatePoints(responseTime)
                     score.addPoints(points)
                     currentQuestionIndex++
-                    questionStartTime = System.currentTimeMillis()
+
+                    // Verifica se todas as perguntas foram respondidas
+                    if (currentQuestionIndex >= shuffledQuestions.size) {
+                        isQuizFinished = true
+                    } else {
+                        questionStartTime = System.currentTimeMillis()
+                    }
                 } else {
-                    saveScoreAndEndQuiz(score.totalScore, leaderboardDao, onQuizEnd)
+                    isQuizFinished = true
                 }
             },
             onQuizEnd = {
-                saveScoreAndEndQuiz(score.totalScore, leaderboardDao, onQuizEnd)
+                isQuizFinished = true
             }
         )
-    } else {
-        saveScoreAndEndQuiz(score.totalScore, leaderboardDao, onQuizEnd)
     }
 }
 
@@ -53,6 +63,7 @@ private fun saveScoreAndEndQuiz(
     onQuizEnd: (score: Int) -> Unit
 ) {
     CoroutineScope(Dispatchers.IO).launch {
+        // Salva a pontuação no banco de dados, evitando duplicatas
         leaderboardDao.insert(LeaderboardEntry(playerName = "Player", score = score))
     }
     onQuizEnd(score) // Redireciona para a tela final
